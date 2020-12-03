@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--CSS links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Form</title>
+
+  </head>
+
+<body>
+
+
+
+
+<section>
+    <div class="container my-5">
+      <h1>Form Layout</h1>
+        <form class="row g-3">
+
+
+          <div class="col-md-6">
+            <label for="f_name" class="form-label">First Name</label>
+            <input type="f_name" class="form-control" id="f_name" placeholder="Enter Your First Name" required="">
+          </div> 
+
+          <div class="col-md-6">
+            <label for="l_name" class="form-label">Last Name</label>
+            <input type="l_name" class="form-control" id="l_name" placeholder="Enter Your Last Name" required="">
+          </div> 
+
+
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+          </div>
+
+          <div class="col-md-6">
+            <label for="Password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="Password" placeholder="Enter Your Password">
+          </div>
+
+          <div class="col-12">
+            <label for="Address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="Address" placeholder="Enter Your Address">
+          </div>
+
+
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+
+<section>
+    <div class="container my-5">
+      <h1>Form Validation</h1>
+      <form class="row g-3 needs-validation" novalidate>
+        
+        <div class="col-md-4">
+          <label for="f_name" class="form-label">First name</label>
+          <input type="text" class="form-control" id="f_name" value="Shibbir" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="l_name" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="l_name" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+           <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="username" class="form-label">Username</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="username" value="shibbirtanvir" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+            <div class="valid-feedback">
+            Looks good!
+          </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="City" class="form-label">City</label>
+          <input type="text" class="form-control" id="City" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="State" class="form-label">State</label>
+          <select class="form-select" id="State" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Dhaka</option>
+            <option>Gajipur</option>
+            <option>Chittagonh</option>
+            <option>Joypurhat</option>
+            <option>Bogura</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="Zip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="Zip" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+
+      </form>
+    </div>
+</section>
+
+
+    <!--js links-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
